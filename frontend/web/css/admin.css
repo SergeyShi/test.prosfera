@@ -1,0 +1,139 @@
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+.box {
+    width: 500px;
+    margin: 200px 0;
+}
+
+.shape1{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    float: left;
+    margin-right: -50px;
+}
+.shape2 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    margin-top: -30px;
+    float: left;
+}
+.shape3 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    margin-top: -30px;
+    float: left;
+    margin-left: -31px;
+}
+.shape4 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    margin-top: -25px;
+    float: left;
+    margin-left: -32px;
+}
+.shape5 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    float: left;
+    margin-right: -48px;
+    margin-left: -32px;
+    margin-top: -30px;
+}
+.shape6 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    float: left;
+    margin-right: -20px;
+    margin-top: -35px;
+}
+.shape7 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    float: left;
+    margin-right: -20px;
+    margin-top: -57px;
+}
+.float {
+    position: absolute;
+    z-index: 2;
+}
+
+.block__display{
+    display: block;
+}
+
+.form {
+    display: block;
+    margin-left: 145px;
+    margin-top: 0em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.control-label {
+    color: rgb(255, 255, 255) !important;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.help-block{
+    color: red;
+    margin-bottom: 15px;
+}
+.lable__color_white{
+    color: white;
+}
