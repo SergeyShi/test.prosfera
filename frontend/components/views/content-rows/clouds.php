@@ -5,7 +5,7 @@
                 <div class="container">
                     <header class="content-header content-header-large content-header-uppercase">
                         <h1>
-                            <mark>Shared</mark> Cloud Hosting
+                            <mark>Ура!</mark> Cloud Hosting
                         </h1>
                         <p>
                             Fully managed enterprise hosting with failover support and load balancing, starting at just <span class="text-color-secondary">$9/month</span>
