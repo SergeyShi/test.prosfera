@@ -5,7 +5,7 @@ return [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=dbprosfera',
             'username' => 'root',
-            'password' => '1',
+            'password' => '',
             'charset' => 'utf8',
         ],
         'mailer' => [
