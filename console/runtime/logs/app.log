@@ -1,0 +1,67 @@
+2018-11-21 15:51:32 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'php_pdo_sqlsrv_72_ts_x64.dll' (tried: D:\Web\XAMPP\php\ext\php_pdo_sqlsrv_72_ts_x64.dll (%1 не является приложением Win32.), D:\Web\XAMPP\php\ext\php_php_pdo_sqlsrv_72_ts_x64.dll.dll (Не найден указанный модуль.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-11-21 15:51:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\shipulin\\AppData\\Roaming'
+    'CLIENTNAME' => 'Sergey’s iMac'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SQLSERVER'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\shipulin'
+    'LOCALAPPDATA' => 'C:\\Users\\shipulin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SQLSERVER'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Web\\XAMPP\\php;C:\\Users\\shipulin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\shipulin\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#1'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\shipulin\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\shipulin\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'SQLSERVER'
+    'USERNAME' => 'shipulin'
+    'USERPROFILE' => 'C:\\Users\\shipulin'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\Web\\XAMPP\\htdocs\\test.prosfera.com.ua\\'
+    'PHP_SELF' => 'D:\\Web\\XAMPP\\htdocs\\test.prosfera.com.ua\\yii'
+    'SCRIPT_NAME' => 'D:\\Web\\XAMPP\\htdocs\\test.prosfera.com.ua\\yii'
+    'SCRIPT_FILENAME' => 'D:\\Web\\XAMPP\\htdocs\\test.prosfera.com.ua\\yii'
+    'PATH_TRANSLATED' => 'D:\\Web\\XAMPP\\htdocs\\test.prosfera.com.ua\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1542811887.6693
+    'REQUEST_TIME' => 1542811887
+    'argv' => [
+        0 => 'D:\\Web\\XAMPP\\htdocs\\test.prosfera.com.ua\\yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/costa-rico/yii2-images/migrations'
+    ]
+    'argc' => 3
+]

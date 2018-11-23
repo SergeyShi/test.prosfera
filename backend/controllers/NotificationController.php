@@ -6,12 +6,27 @@ use yii\web\Controller;
 use backend\models\Notification;
 use yii\filters\VerbFilter;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 
 class NotificationController extends Controller
 {
 	 public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['logout', 'index'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -71,6 +86,7 @@ class NotificationController extends Controller
 
         return $dataProvider;
     }
+    
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);

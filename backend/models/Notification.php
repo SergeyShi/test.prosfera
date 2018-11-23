@@ -12,9 +12,14 @@ use Yii;
  */
 class Notification extends \yii\db\ActiveRecord
 {
-    /**
-     * @inheritdoc
-     */
+    public function behaviors()
+    {
+        return [
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
+        ];
+    }
     public static function tableName()
     {
         return '{{%widget_notification}}';

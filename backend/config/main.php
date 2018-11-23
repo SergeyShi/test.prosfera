@@ -11,7 +11,17 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => ['yii2images' => [
+        'class' => 'rico\yii2images\Module',
+        //be sure, that permissions ok
+        //if you cant avoid permission errors you have to create "images" folder in web root manually and set 777 permissions
+        'imagesStorePath' => 'backend/upload/store', //path to origin images
+        'imagesCachePath' => 'backend/upload/cache', //path to resized copies
+        'graphicsLibrary' => 'GD', //but really its better to use 'Imagick'
+        'placeHolderPath' => '@webroot/img/no-image.png', // if you want to get placeholder when image not exists, string will be processed by Yii::getAlias
+        'imageCompressionQuality' => 100, // Optional. Default value is 85.
+            ],
+        ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -36,6 +46,13 @@ return [
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
+        ],
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+                ],
+            ],
         ],
         /*
         'urlManager' => [
