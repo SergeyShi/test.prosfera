@@ -1,13 +1,13 @@
 <?php
 
 /* @var $this yii\web\View */
-use frontend\components\ContentRows;
+use frontend\components\ContentRowsWidget;
 $this->title = 'Prosfera';
 ?>
 
 <!-- Content -->
 <section id="content">
-   <?= ContentRows::widget() ?>
+   <?= ContentRowsWidget::widget() ?>
     <!-- Content Row -->
     <section class="content-row">
         <div class="container">

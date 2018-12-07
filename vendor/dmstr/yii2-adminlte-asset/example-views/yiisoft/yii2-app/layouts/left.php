@@ -49,6 +49,7 @@ if ($isGuest){
                     'items' => [
                             ['label' => 'Рекламное уведомление', 'icon' => 'gavel', 'url' => ['/notification']],
                             ['label' => 'Карусель услуг', 'url' => ['/content-cloud']],
+                            ['label' => 'Статьи', 'url' => ['/post']],
                                  ],
                         ],
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],

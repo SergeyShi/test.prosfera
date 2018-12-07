@@ -5,9 +5,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Clients */
 
-$this->title = 'Изменить запись: ' . $model->Name;
+$this->title = 'Изменить запись: ' . $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Карусель услуг', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->Name, 'url' => ['view', 'id' => $model->ID]];
+$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="clients-update">

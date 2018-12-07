@@ -15,8 +15,8 @@ return [
         'class' => 'rico\yii2images\Module',
         //be sure, that permissions ok
         //if you cant avoid permission errors you have to create "images" folder in web root manually and set 777 permissions
-        'imagesStorePath' => 'backend/upload/store', //path to origin images
-        'imagesCachePath' => 'backend/upload/cache', //path to resized copies
+        'imagesStorePath' => 'uploads/store', //path to origin images
+        'imagesCachePath' => 'uploads/cache', //path to resized copies
         'graphicsLibrary' => 'GD', //but really its better to use 'Imagick'
         'placeHolderPath' => '@webroot/img/no-image.png', // if you want to get placeholder when image not exists, string will be processed by Yii::getAlias
         'imageCompressionQuality' => 100, // Optional. Default value is 85.
@@ -62,6 +62,17 @@ return [
             ],
         ],
         */
+
+    ],
+    'controllerMap' => [
+        'elfinder' => [
+            'class' => 'mihaildev\elfinder\PathController',
+            'access' => ['@'],
+            'root' => [
+                'path' => 'files',
+                'name' => 'Files'
+            ],
+        ]
     ],
     'params' => $params,
 ];

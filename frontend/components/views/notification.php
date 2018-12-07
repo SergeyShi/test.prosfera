@@ -1,8 +1,7 @@
 <?php
-use yii\helpers\Html;
-use yii\helpers\Url;
+
 use backend\models\Notification;
-//use frontend\components\CloudNotification;
+
 ?>
 <?php $messages = Notification::find()->where(['active' => 1])->all();?>
 <!-- Notification -->

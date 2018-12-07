@@ -41,15 +41,29 @@ class ContentCloud extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    public function upload()
+    {
+        if($this->validate())
+        {
+            $path =  'uploads/store/' . $this->image->baseName . '.' . $this->image->extension;
+            $this->image->saveAs($path);
+            $this->attachImage($path);
+            @unlink($path);
+            return true;
+        }else
+            {
+                return false;
+            }
+
+    }  
+
     public function attributeLabels()
     {
         return [
             'id' => 'ID',
             'name' => 'Наименование',
             'description' => 'Описание',
+            'image' => 'Картинка',
         ];
     }
 }
